@@ -1,0 +1,57 @@
+html,body {
+    font-family:'Noto Sans',sans-serif;
+	
+	font-size: 16px;
+	background: $white;
+	color: $black-80;
+	height:100%;
+	line-height:$lh-default;
+
+	
+}
+
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	font-fmily:'Noto Sans',sans-serif;
+	font-weight:700;
+	margin: 0px;
+	line-height: $lh-default;
+}
+
+p{
+	margin :0px;
+	line-height: $lh-copy;
+}
+
+a{
+	color: $brand;
+	text-decoration:none;
+	&:hover {
+	transition :all 0.5s ease;
+	color:h($brand);
+	}
+}
+
+buttton {
+	border:0px;
+	background :transparent;
+	padding:0px;
+	outline:none !important;
+	cursor: pointer;
+
+}
+
+input,select,textarea {
+	outline :none !important;
+}
+textarea{
+	resize :none;
+}

@@ -1,0 +1,5 @@
+#posts-index{
+	  .post-excerpt + .post-excerpt {
+	  margin-top :$spacing * 24;
+	  }
+}

@@ -1,0 +1,30 @@
+.post-excerpt {
+	background: $white;
+	padding : $spacing * 18 $spacing *24;
+	box-shadow : $box-shadow;
+	border-radius :$border-radius;
+}
+.title{
+	font-family: $font-serif;
+	font-size:2.25em;
+	display: block;
+	margin-bottom:$spacing *12;
+	color: $black-80;
+	&:hover {
+	color:$black-60;
+	}
+}
+
+
+.excerpt{
+	font-family:$font-serif;
+	font-size: 1.125 rem;
+	color:$black-80;
+	line-height:$lh-copy;
+}
+.read-more{
+	display: inline-block;
+	font-weight:700;
+	font-size:1.125rem;
+	margin-top: $spacing * 6;
+}
