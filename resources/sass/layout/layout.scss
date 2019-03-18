@@ -4,7 +4,7 @@
 }
 aside {
 	background:$white;
-	padding: $spacing * 18 $spacing * 24;
+	
 	box-shadow:$box-shadow;
 	width:240px + $spacing * 48;
 	flex-grow: 0;
@@ -15,5 +15,6 @@ aside {
 main {
 	background:$lightGrey;
 	padding:$spacing * 18 $spacing * 24;
+
 	flex-grow:1;
 }

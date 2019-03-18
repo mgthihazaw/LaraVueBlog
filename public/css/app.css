@@ -447,7 +447,6 @@ textarea {
 
 aside {
   background: #ffffff;
-  padding: 72px 96px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   width: 432px;
   flex-grow: 0;
@@ -460,17 +459,31 @@ main {
   flex-grow: 1;
 }
 
-aside header h1 a {
+aside .sidebar-content {
+  width: 432px;
+  padding: 72px 96px;
+  height: 100%;
+  position: relative;
+}
+
+aside .sidebar-content.fixed-top {
+  position: fixed;
+  top: 0px;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+aside .sidebar-content header h1 a {
   font-size: 1.625em;
   color: rgba(0, 0, 0, 0.8);
   display: block;
 }
 
-aside header h1 a:hover {
+aside .sidebar-content header h1 a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-aside header h2 {
+aside .sidebar-content header h2 {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.6);
   font-weight: 400;
@@ -478,28 +491,28 @@ aside header h2 {
   line-height: 1.65em;
 }
 
-aside nav {
+aside .sidebar-content nav {
   margin-top: 96px;
 }
 
-aside nav .nav-item {
+aside .sidebar-content nav .nav-item {
   color: rgba(0, 0, 0, 0.8);
   font-family: "Noto Sans", serif;
   display: block;
   font-weight: 700;
 }
 
-aside nav .nav-item:hover {
+aside .sidebar-content nav .nav-item:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-aside nav .nav-item + .nav-item {
+aside .sidebar-content nav .nav-item + .nav-item {
   margin-top: 9px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 9px;
 }
 
-aside nav .nav-item .nav-description {
+aside .sidebar-content nav .nav-item .nav-description {
   color: rgba(0, 0, 0, 0.6);
   font-family: "Noto Sans", sans-serif;
   display: block;
@@ -508,26 +521,26 @@ aside nav .nav-item .nav-description {
   font-weight: 400;
 }
 
-aside .social-nav {
+aside .sidebar-content .social-nav {
   display: flex;
   margin-top: 96px;
 }
 
-aside .social-nav a {
+aside .sidebar-content .social-nav a {
   display: block;
 }
 
-aside .social-nav a svg {
+aside .sidebar-content .social-nav a svg {
   fill: rgba(0, 0, 0, 0.8);
   width: 28px;
   height: 28px;
 }
 
-aside .social-nav a:hover svg {
+aside .sidebar-content .social-nav a:hover svg {
   fill: rgba(0, 0, 0, 0.6);
 }
 
-aside .social-nav a + a {
+aside .sidebar-content .social-nav a + a {
   margin-left: 16px;
 }
 
