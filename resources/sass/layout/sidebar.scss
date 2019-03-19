@@ -2,14 +2,24 @@ aside {
 .sidebar-content {
        width:240px + $spacing * 48;
        padding: $spacing * 18 $spacing * 24;
-       height:100%;
-       position:relative;
+       
+
+	   @media not all and (max-width:60rem){
 	   &.fixed-top{
 			position:fixed;
 			top:0px;
-			height:100%;
-			overflow-x: hidden;
+			
+			
+			
 		}
+		&.fixed-bottom{
+			position:fixed;
+			bottom:0px;
+			
+			
+			
+		}
+	   }
 		header{
 			h1 a{
 			font-size:1.625em;
@@ -70,7 +80,42 @@ aside {
 		         }
 		     }
 		}
-}
+   }
+  //responsive
+  @media (max-width: 80rem){
+    aside{
+       .sidebar.content {
+           width:240px + $spacing *24;
+           padding:$spacing *12;
 
+      }
+    }
+  }
+  }
+  @media (max-width:60rem){
+      aside{
+         width:auto;
+
+         .sidebar-content {
+          width:auto;
+          padding-left: $spacing * 24;
+          padding-right: $spacing * 24;
+
+         }
+         nav{
+            margin-top:$spacing * 12;
+         }
+          .social-nav{
+            margin-top:$spacing * 12;
+         }
+      }
+  }
+
+  @media (max-width:30rem){
+     aside{
+           .sidebar-content{
+           padding: $spacing * 12;
+           }
+     }
+  }
 	
-}

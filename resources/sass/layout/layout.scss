@@ -1,6 +1,10 @@
 #app {
 	display:flex;
     min-height:100%;
+
+    @media(max-width: 60rem){
+       flex-direction : column;
+    }
 }
 aside {
 	background:$white;
@@ -10,6 +14,10 @@ aside {
 	flex-grow: 0;
 	flex-shrink: 0;
 
+	@media (max-width:80rem){
+       width:240px +$spacing *24;
+	}
+
 }
 
 main {
@@ -17,4 +25,12 @@ main {
 	padding:$spacing * 18 $spacing * 24;
 
 	flex-grow:1;
+
+	@media (max-width :80rem){
+	  padding :$spacing *12;
+	}
+		@media (max-width :30rem){
+	     padding :0px;
+	     background:$white
+	}
 }

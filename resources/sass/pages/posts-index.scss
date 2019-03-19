@@ -3,3 +3,24 @@
 	  margin-top :$spacing * 24;
 	  }
 }
+
+//responsive
+
+@media (max-width : 80rem){
+	#posts-index{
+	  .post-excerpt + .post-excerpt {
+	  margin-top :$spacing * 12;
+	  }
+   }
+
+}
+
+
+@media (max-width : 30rem){
+	#posts-index{
+	  .post-excerpt + .post-excerpt {
+	  margin-top :0px;
+	  }
+   }
+
+}
