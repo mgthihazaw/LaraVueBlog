@@ -7,7 +7,7 @@
     }
 }
 aside {
-	background:$white;
+	background:$side;
 	
 	box-shadow:$box-shadow;
 	width:240px + $spacing * 48;
@@ -21,7 +21,7 @@ aside {
 }
 
 main {
-	background:$lightGrey;
+	background:$lightblue;
 	padding:$spacing * 18 $spacing * 24;
 
 	flex-grow:1;

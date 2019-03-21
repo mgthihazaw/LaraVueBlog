@@ -14,12 +14,14 @@
        
     </head>
     <body id="@yield('body_id')">
-        <div id="app">
+        <div class="container">
+        <div id="app" >
             @include('layout.sidebar')
             <main>
                 @yield('content')
             </main>
         </div>
+    </div>
 
         {!! script_ts('/js/app.js') !!}
     </body>

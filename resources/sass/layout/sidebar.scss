@@ -23,15 +23,15 @@ aside {
 		header{
 			h1 a{
 			font-size:1.625em;
-			color: $black-80;
+			color: $heading;
 			display: block;
 			&:hover {
-			color:$black-60;
+			color:$white-60;
 			  }
 		   }
 		   h2{
 		   font-size:1rem;
-		   color: $black-60;
+		   color: $heading2;
 		   font-weight: 400;
 		   margin-top :$spacing * 2.25;
 		   line-height:$lh-copy;
@@ -40,12 +40,15 @@ aside {
 		nav {
 			margin-top :$spacing *24;
 			.nav-item {
-				color :$black-80;
+			padding:20px;
+				color :$white-80;
 				font-family: 'Noto Sans',serif;
 				display: block;
 				font-weight: 700;
 				&:hover {
-				    color: $black-60;
+				    color: $white-60;
+				    border-left:2px solid $heading;
+				    border-right:2px solid $heading;
 				}
 	            & + .nav-item {
 	                margin-top:$spacing *2.25;
@@ -68,12 +71,12 @@ aside {
 		     a{
 		         display :block;
 		         svg {
-			         fill: $black-80;
+			         fill: $heading;
 			         width: $spacing * 7;
 		             height: $spacing * 7;
 		         }
 		         &:hover svg {
-		            fill :$black-60;
+		            fill :$heading;
 		         }
 		         & + a{
 		         margin-left:$spacing * 4;

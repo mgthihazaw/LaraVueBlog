@@ -1,5 +1,5 @@
 .post-excerpt {
-	background: $white;
+	background: $post;
 	padding : $spacing * 18 $spacing *24;
 	box-shadow : $box-shadow;
 	border-radius :$border-radius;
@@ -9,17 +9,21 @@
 	font-size:2.25em;
 	display: block;
 	margin-bottom:$spacing *12;
-	color: $black-80;
+	color: $black;
+	a{
+	color: $heading;
 	&:hover {
-	color:$black-60;
+	color:$white-60;
 	}
+	}
+	
 }
 
 
 .excerpt{
 	font-family:$font-serif;
 	font-size: 1.125 rem;
-	color:$black-80;
+	color:$white-80;
 	line-height:$lh-copy;
 }
 .read-more{
@@ -37,6 +41,7 @@
 	    padding :$spacing * 12;
 	 .title a{
 	    margin-bottom :$spacing *6;
+	    color: $heading;
 	 }
 	 }
 }

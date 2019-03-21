@@ -33,18 +33,19 @@ const app = new Vue({
 
     },
     mounted(){
-    	this.calculateSideBar()
+    	this.calculateSideBar();
     },
     methods: {
     	handleResize: _.throttle(function (){
-            this.calculateSidebar()
+            this.calculateSideBar()
     	},100),
     	handleScroll:_.throttle(function(){
     		this.sidebar.windowScrollTop =window.pageYOffset || document.documentElement.scrollTop
     	},100),
+
     	calculateSideBar(){
-    		this.sidebar.height=this.$refs.sidebarContent.offsetHeight
-    		this.sidebar.windowHeight=window.innerHeight
+    		this.sidebar.height=this.$refs.sidebarContent.offsetHeight;
+    		this.sidebar.windowHeight=window.innerHeight;
     	}
     }
 

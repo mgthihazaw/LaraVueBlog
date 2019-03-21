@@ -48832,7 +48832,7 @@ var app = new Vue({
   },
   methods: {
     handleResize: _.throttle(function () {
-      this.calculateSidebar();
+      this.calculateSideBar();
     }, 100),
     handleScroll: _.throttle(function () {
       this.sidebar.windowScrollTop = window.pageYOffset || document.documentElement.scrollTop;
